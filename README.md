@@ -15,3 +15,7 @@ Página hecha en bootstrap haciendo uso de al menos 10 componentes diferentes
  - Tener instalada la extensión "live server"
  - Ir al archivo de index.html y en el menú de abajo a la derecha presionar "Go Live"
  - La página está corriendo en el puerto 5500
+
+--------
+## **Ver Sitio en Internet**
+[anacarolina-tarea1-labweb.netlify.app] (anacarolina-tarea1-labweb.netlify.app)
