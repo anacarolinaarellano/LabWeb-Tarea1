@@ -18,63 +18,136 @@
   <body>
     <nav class="navbar navbar-dark bg-dark my-nav">
       <div class="container-fluid">
-        <span class="navbar-brand h1">Ana Carolina (componente 1)</span>
+        <span class="navbar-brand h1">Laboratorio de aplicaciones web</span>
       </div>
     </nav>
     <div class="container">
-      <h1>Laboratorio de aplicaciones web: Tarea 1</h1>
+      <h1>Tarea 1</h1>
       <h2>Por: Ana Carolina Arellano Alvarez</h2>
 
-      <div class="card my-list" style="width: 30%">
-        <div class="card-body">
-          <h3 class="card-title">Componente 2</h3>
-          <p class="card-text">
-            Ejemplo de componente "card" con botón (en este caso desactivado).
-          </p>
-          <a class="btn btn-secondary disabled">Botón desactivado</a>
+      <div class="row my-row">
+        <div class="card my-list" style="width: 30%; padding: 0%">
+          <div class="card-body">
+            <h3 class="card-title">Componente Trajeta</h3>
+            <p class="card-text">
+              Ejemplo de componente "card" con botón (en este caso desactivado).
+            </p>
+            <a class="btn btn-secondary disabled">Botón desactivado</a>
+          </div>
+        </div>
+        <div class="card my-list" style="width: 30%">
+          <div class="card-body my-card">
+            <h3 class="card-title">Componente Trajeta</h3>
+            <p class="card-text">
+              Ejemplo de componente "card" con botón (en estado "warning" y sin
+              ruta a la cual ir).
+            </p>
+            <a class="btn btn-warning">Botón "activado"</a>
+          </div>
         </div>
       </div>
 
-      <ul class="list-group my-list">
-        <li class="list-group-item">Componente 3</li>
-        <li class="list-group-item">Llamado "list group"/li></li>
-        <li class="list-group-item">Los botones al final de la página</li>
-        <li class="list-group-item">son el componente 6</li>
-      </ul>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Dropdown button (componente 4)
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <div class="row-cols-2 my-row">
+        <ul class="list-group my-list">
+          <li class="list-group-item">Uso de otro componente</li>
+          <li class="list-group-item">Llamado "list group"</li>
         </ul>
       </div>
 
-      <p>
-        <button
-          class="btn btn-primary my-toggle"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapseConTexto"
-          aria-controls="collapseConTexto"
+      <div class="row my-row">
+        <div
+          id="myCarouselIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
         >
-          Compoenente 5 ¡Da click!
-        </button>
-      </p>
-      <div style="min-height: 60px; margin-bottom: 2rem;">
-        <div class="collapse collapse-vertical" id="collapseConTexto">
-          <div class="card card-body" style="width: 25%">
-            This is some placeholder content for a horizontal collapse. It's
-            hidden by default and shown when triggered.
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarouselIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarouselIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarouselIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active my-carousel-item">
+              <img src="/images/perrito1.jpeg" class="d-block w-100"  />
+            </div>
+            <div class="carousel-item my-carousel-item">
+              <img src="/images/perrito2.jpeg" class="d-block w-100"  />
+            </div>
+            <div class="carousel-item my-carousel-item">
+              <img src="/images/perrito3.png" class="d-block w-100"  />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarouselIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="row my-row">
+        <div class="dropdown">
+          <button
+            class="btn-lg btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Botón de estilo "Dropdown"
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <p>
+          <button
+            class="btn-lg btn-primary my-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseConTexto"
+            aria-controls="collapseConTexto"
+          >
+            Elemento de tipo "collapse" vertical
+          </button>
+        </p>
+        <div style="min-height: 60px; margin-bottom: 2rem">
+          <div class="collapse collapse-vertical" id="collapseConTexto">
+            <div class="card card-body" style="width: 25%">
+              This is some placeholder content for a horizontal collapse. It's
+              hidden by default and shown when triggered.
+            </div>
           </div>
         </div>
       </div>
