@@ -47,6 +47,39 @@
         </div>
       </div>
 
+      <div class="row mmy-row">
+        <button
+          class="btn-lg btn-dark col-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#myOffcanvas"
+          aria-controls="myOffcanvas"
+          style="margin-left: auto; margin-right: auto"
+        >
+          Click para ver elemento Offcanvas
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="myOffcanvas"
+          aria-labelledby="offcanvasLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasLabel">Componente "Offcanvas" a la derecha</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            Aquí puede ir cualquier tipo de información
+          </div>
+        </div>
+      </div>
+
       <div class="row-cols-2 my-row">
         <ul class="list-group my-list">
           <li class="list-group-item">Uso de otro componente</li>
@@ -120,12 +153,22 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Botón de estilo "Dropdown"
+            Componente de estilo "Dropdown"
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <a class="dropdown-item"
+                >Aquí se pueden poner links dentro del mismo sitio o externos</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="https://github.com/anacarolinaarellano/LabWeb-Tarea1"
+                target="_blank"
+                >Ejemplo</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -142,9 +185,9 @@
         </p>
         <div style="min-height: 60px; margin-bottom: 2rem">
           <div class="collapse collapse-vertical" id="collapseConTexto">
-            <div class="card card-body" style="width: 25%">
-              This is some placeholder content for a horizontal collapse. It's
-              hidden by default and shown when triggered.
+            <div class="card card-body" style="width: 35%; font-size: 1.5rem">
+              Aquí igual se puede poner cualquier texto que se quiera mantener
+              "escondido" en un inicio y que se muestre al dar click.
             </div>
           </div>
         </div>
