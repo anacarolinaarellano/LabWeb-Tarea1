@@ -16,13 +16,9 @@ h2{
 li{
     font-size: 1.3rem;
 }
-.my-toggle{
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-}
 
 img{
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .my-nav{
@@ -30,8 +26,9 @@ img{
 }
 
 .my-carousel-item{
-    min-height: 30rem !important;
-    max-height: 30rem !important;
+    padding: 1rem !important;
+    min-height: 35rem !important;
+    max-height: 35rem !important;
 }
 .my-list{
     display: block;
@@ -40,6 +37,10 @@ img{
     width:50%;
     margin-top: 2rem;
     margin-bottom: 4rem !important;
+}
+.my-toggle{
+    margin-top: 2em;
+    margin-bottom: 0.5em;
 }
 
 .my-row{
@@ -52,6 +53,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem !important;
     font-size: 1.2rem;
 }
 
@@ -59,8 +61,6 @@ img{
     background-color: #FBEEE6;
 }
 
-.my-item{
-}
 .nav-h1{
     text-align: center;
 }
